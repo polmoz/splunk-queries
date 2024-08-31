@@ -7,9 +7,17 @@
   - [ ] Youtube video examples
 
 ### ** SPL queries and examples **
+
+- Example to visulize access invents from internal splunk index and use Bubble Chart visualization
 ```
 index = _internal sourcetype=splunkd_access | stats count sum(bytes) as total_bytes by status, date_hour | table status date_hour count total_bytes status
 ```
-  
+
+- Example to convert search query to a table display
+```
+index=web 
+| table clientip, action
+```
+
 #### Tech Study notes and references:
   1. [ Splunk Search details and intro ] ([https://www.youtube.com/watch?v=IaA9YNlg5hM&t=303s](https://www.splunk.com/en_us/resources/videos/basic-search-in-splunk-enterprise.html))
