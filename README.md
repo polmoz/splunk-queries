@@ -2,7 +2,7 @@
 
 ## 08-31-2024
 
-- ### ** Daily Notes **
+### ** Daily Notes **
   - [x] Udemy course examples
   - [ ] Youtube video examples
 
